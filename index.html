@@ -18,6 +18,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --orange: #ff6f00;
+      --light-orange: #ffe0b2;
+      --dark-orange: #e65100;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -26,10 +32,12 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      background: #ffffff;
       color: #222;
       line-height: 1.6;
       padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     header, section {
@@ -38,12 +46,12 @@
 
     header h1 {
       font-size: 2.5em;
-      color: #00796b;
+      color: var(--orange);
     }
 
     h2 {
       margin-top: 20px;
-      color: #00695c;
+      color: var(--dark-orange);
     }
 
     p {
@@ -62,7 +70,8 @@
       background: white;
       padding: 10px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border: 2px solid var(--light-orange);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       transition: transform 0.2s ease-in-out;
     }
 
@@ -83,24 +92,31 @@
     }
 
     a {
-      color: #0077cc;
+      color: var(--orange);
       text-decoration: none;
+      font-weight: 600;
     }
 
     a:hover {
+      color: var(--dark-orange);
       text-decoration: underline;
     }
 
     .note {
       font-size: 0.9em;
-      color: #444;
+      color: #555;
       margin-top: 8px;
+      background: #f9f9f9;
+      padding: 6px 10px;
+      border-radius: 6px;
+      display: inline-block;
     }
 
     footer {
       margin-top: 40px;
       font-size: 0.85em;
-      color: #555;
+      color: #777;
+      text-align: center;
     }
   </style>
 </head>
@@ -114,7 +130,7 @@
 
   <section>
     <h2>Podcast Link</h2>
-    <iframe src="https://open.spotify.com/embed/show/2qhA77ahxOzmAlTN8e1Wf1?utm_source=generator&theme=0"
+    <iframe src="https://open.spotify.com/embed/show/2qhA77ahxOzmAlTN8e1Wf1?utm_source=generator&theme=1"
             width="100%" height="232"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
   </section>
@@ -124,15 +140,15 @@
     <div class="hosts">
       <div class="host">
         <p><strong>Steven</strong><br>(Gold 3 on Clash Royal)</p>
-        <img src="StevenUSA.png" alt="Photo of Steven, one of the podcast hosts">
+        <img src="StevenUSA.png" alt="Steven, podcast host, Gold 3 in Clash Royale">
       </div>
       <div class="host">
         <p><strong>Leo</strong><br>(Developer)</p>
-        <img src="oogaleo.png" alt="Photo of Leo, one of the podcast hosts">
+        <img src="oogaleo.png" alt="Leo, podcast host, developer">
       </div>
       <div class="host">
         <p><strong>Ryan</strong><br>(Little Stinker)</p>
-        <img src="ryanmouth.jpeg" alt="Photo of Ryan, one of the podcast hosts">
+        <img src="ryanmouth.jpeg" alt="Ryan, podcast host, little stinker">
       </div>
     </div>
   </section>
@@ -140,7 +156,7 @@
   <section>
     <h2>Announcements</h2>
     <p>The Topicals Website has been totally revamped, to reflect my newer programming skills and more mature personality. Don't worry! The old site's code can be requested by contacting me.
-BEWARE! Some links are OLD and DO NOT WORK.</p>
+    <br><br><strong>BEWARE:</strong> Some links are OLD and DO NOT WORK.</p>
   </section>
 
   <section>
@@ -153,7 +169,7 @@ BEWARE! Some links are OLD and DO NOT WORK.</p>
 
   <section>
     <p><a href="https://altf4xx.github.io/topicals-revamp2/">Visit the 2nd Page →</a></p>
-    <p class="note"><em>Revamp Ver. 1.1</em></p>
+    <p class="note"><em>Revamp Ver. 1.12</em></p>
   </section>
 
   <footer>

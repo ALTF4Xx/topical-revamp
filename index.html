@@ -7,6 +7,13 @@
   <meta name="description" content="The Topicals Podcast">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="The Topicals - Revamp Update">
+  <meta property="og:description" content="A newly revamped site for The Topicals Podcast!">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:url" content="https://altf4xx.github.io/topicals-revamp2/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
@@ -19,7 +26,7 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #e0f7fa;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
       color: #222;
       line-height: 1.6;
       padding: 20px;
@@ -44,19 +51,23 @@
     }
 
     .hosts {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
 
     .host {
       text-align: center;
-      flex: 1 1 200px;
       background: white;
       padding: 10px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .host:hover {
+      transform: scale(1.03);
     }
 
     .host img {
@@ -113,37 +124,200 @@
     <div class="hosts">
       <div class="host">
         <p><strong>Steven</strong><br>(Gold 3 on Clash Royal)</p>
-        <img src="StevenUSA.png" alt="Steven">
+        <img src="StevenUSA.png" alt="Photo of Steven, one of the podcast hosts">
       </div>
       <div class="host">
         <p><strong>Leo</strong><br>(Developer)</p>
-        <img src="oogaleo.png" alt="Leo">
+        <img src="oogaleo.png" alt="Photo of Leo, one of the podcast hosts">
       </div>
       <div class="host">
         <p><strong>Ryan</strong><br>(Little Stinker)</p>
-        <img src="ryanmouth.jpeg" alt="Ryan">
+        <img src="ryanmouth.jpeg" alt="Photo of Ryan, one of the podcast hosts">
       </div>
     </div>
   </section>
 
- 
   <section>
     <h2>Announcements</h2>
-    <p>The Topicals Website has been totally revamped, to reflect my newer programming skills and more mature personality. Don't worry! The old sites code can be requested by contacting me.
+    <p>The Topicals Website has been totally revamped, to reflect my newer programming skills and more mature personality. Don't worry! The old site's code can be requested by contacting me.
 BEWARE! Some links are OLD and DO NOT WORK.</p>
   </section>
 
-
- <section>
+  <section>
     <h2>Podcast Log</h2>
-    <p><strong>7/4/2025</strong></p>
-    <p>Hey listeners! No new podcast yet, but maybe soon...</p>
+    <article>
+      <p><strong>7/4/2025</strong></p>
+      <p>Hey listeners! No new podcast yet, but maybe soon...</p>
+    </article>
   </section>
-
 
   <section>
     <p><a href="https://altf4xx.github.io/topicals-revamp2/">Visit the 2nd Page →</a></p>
     <p class="note"><em>Revamp Ver. 1.0</em></p>
+  </section>
+
+  <footer>
+    &copy; 2025 The Topicals Podcast. All rights reserved.
+  </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Topicals - Revamp Update</title>
+  <meta name="description" content="The Topicals Podcast">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="The Topicals - Revamp Update">
+  <meta property="og:description" content="A newly revamped site for The Topicals Podcast!">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:url" content="https://altf4xx.github.io/topicals-revamp2/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #222;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header, section {
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #00796b;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #00695c;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+
+    .hosts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .host {
+      text-align: center;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .host:hover {
+      transform: scale(1.03);
+    }
+
+    .host img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    iframe {
+      margin-top: 15px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #444;
+      margin-top: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.85em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Topicals Website!</h1>
+    <h2>WELCOME TO THE REVAMP!</h2>
+    <p>Topicals is a podcast, most likely on your favorite streaming service!</p>
+  </header>
+
+  <section>
+    <h2>Podcast Link</h2>
+    <iframe src="https://open.spotify.com/embed/show/2qhA77ahxOzmAlTN8e1Wf1?utm_source=generator&theme=0"
+            width="100%" height="232"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </section>
+
+  <section>
+    <h2>The Hosts</h2>
+    <div class="hosts">
+      <div class="host">
+        <p><strong>Steven</strong><br>(Gold 3 on Clash Royal)</p>
+        <img src="StevenUSA.png" alt="Photo of Steven, one of the podcast hosts">
+      </div>
+      <div class="host">
+        <p><strong>Leo</strong><br>(Developer)</p>
+        <img src="oogaleo.png" alt="Photo of Leo, one of the podcast hosts">
+      </div>
+      <div class="host">
+        <p><strong>Ryan</strong><br>(Little Stinker)</p>
+        <img src="ryanmouth.jpeg" alt="Photo of Ryan, one of the podcast hosts">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Announcements</h2>
+    <p>The Topicals Website has been totally revamped, to reflect my newer programming skills and more mature personality. Don't worry! The old site's code can be requested by contacting me.
+BEWARE! Some links are OLD and DO NOT WORK.</p>
+  </section>
+
+  <section>
+    <h2>Podcast Log</h2>
+    <article>
+      <p><strong>7/4/2025</strong></p>
+      <p>Hey listeners! No new podcast yet, but maybe soon...</p>
+    </article>
+  </section>
+
+  <section>
+    <p><a href="https://altf4xx.github.io/topicals-revamp2/">Visit the 2nd Page →</a></p>
+    <p class="note"><em>Revamp Ver. 1.1</em></p>
   </section>
 
   <footer>
